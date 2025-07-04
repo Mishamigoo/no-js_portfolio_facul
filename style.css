@@ -1,0 +1,157 @@
+/* Reaproveitando algumas estilizações já feitas em outro projeto meu */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+*, :root{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif; /*caso não seja possível usar a fonte inter, a sans-serif será carregada */
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%
+}
+
+body{
+    background-color: #0F172A;
+    color: #E2E8F0;
+    padding-top: 0; 
+}
+
+main {
+    padding: 20px;
+    max-width: 640px;
+    margin: 0 auto 64px; /* Centralizando o main horizontalmente, com margem superior e inferior */
+}
+
+header {
+    margin-top: 64px; /* Mantém o margin-top original */
+    padding-bottom: 24px;
+    border-bottom: 1px solid #334155;
+    text-align: center;
+}
+
+header h1 {
+    margin-top: 24px;
+    font-size: 30px;
+    color: #F1F5F9;
+}
+
+/* Mantendo o padrão escuro que escolhi usar, estilizando aqui o menu de navegação */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 24px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #94A3B8;
+    text-decoration: none;
+    padding: 5px 10px;
+    border: 1px solid #94A3B8;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Adicionando aqui uma transição para a cor do texto */
+}
+
+/* Aplicando um fundo e texto mais claros ao passar o mouse por cima */
+nav ul li a:hover {
+    background-color: #334155;
+    color: #F1F5F9;
+}
+
+/* Estilizando agora as seções principais */
+main section {
+    padding: 20px;
+    margin: 20px auto;
+    background-color: #1E293B;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /*Sombras e mais sombras */
+    max-width: 800px;
+    color: #E2E8F0;
+}
+
+main section h2 {
+    color: #F1F5F9;
+    margin-bottom: 15px;
+}
+
+/* Estilizando aqui o formulário de contato */
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #F1F5F9;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #475569;
+    border-radius: 4px;
+    background-color: #0F172A;
+    color: #F1F5F9;
+    box-sizing: border-box;
+}
+
+form input:focus,
+form textarea:focus {
+    outline: none; /* Removendo a borda padrao de foco */
+    border-color: #A3E635; /* Cor da borda ao focar, inspirando-me no meu outro projeto */
+}
+
+form button {
+    padding: 10px 20px;
+    background-color: #A3E635;
+    color: #0F172A;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #9dff00;
+}
+
+/* Por ultimo, estilizando o rodapé */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #1e293b;
+    color: #94a3b8;
+    margin-top: 30px;
+    border-top: 1px solid #334155;
+}
+
+/* Estilizando aqui o link que leva ao github, já que estava com o estilo padrão */
+main section a{
+    color: #A3E635;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+main section a:hover {
+    color: #9dff00;
+}
+
+main section ul {
+    list-style: none; /* Removendo os marcadores da lista */
+    padding-left: 0; /* Aqui eu removi o espaço criado para os marcadores, já que também os removi */
+    margin-top: 15px;
+}
+
+main section ul li {
+    margin-bottom: 8px;
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width, initial-scale=1.0">
+    <title>Portfólio pessoal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Meu Portfólio</h1>
+        <nav>
+            <ul>
+                <li><a href="#sobre-mim" class="nav-link">Sobre mim</a></li>
+                <li><a href="#formacao" class="nav-link">Formação educacional e idiomas</a></li>
+                <li><a href="#portfolio" class="nav-link">Portfólio</a></li>
+                <li><a href="#contato" class="nav-link">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="sobre-mim" class="content-section">
+            <h2>Sobre mim</h2>
+            <p>Olá! Me chamo Cleudo Diniz. Atualmente faço a faculdade de análise e desenvolvimento de sistemas. Quando não estou estudando, como passatempo gosto de jogar jogos eletrônicos com meus amigos, assistir séries e filmes e, aos finais de semana, sair para passear em algum lugar da cidade.</p>
+        </section>
+
+        <section id="formacao" class="content-section">
+            <h2>Formação e idiomas</h2>
+            <p>Ensino médio concluído em 2016. 
+                <br> Cursos em lógica de programação, HTML, CSS, JS, Python e SQL. 
+                <br>Atualmente fazendo faculdade, como citado no tópico onde falo um pouco sobre mim. 
+                <br>Inglês intermediário.</p>
+        </section>
+
+        <section id="portfolio" class="content-section">
+            <h2>Portfólio</h2>
+            <p>Abaixo, no meu GitHub você encontra alguns projetos feitos por mim.</p>
+            <ul>
+                <li>
+                    <a href="https://github.com/Mishamigoo" target="_blank">Meu perfil no GitHub</a>
+                </li>
+            </ul>
+        </section>
+
+        <section id="contato" class="content-section">
+            <h2>Contato</h2>
+            <p>Caso queira entrar em contato comigo, basta preencher o formulário abaixo:</p>
+            <form>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+                <br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <br>
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="6" required></textarea>
+                <br>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025. Cleudo Diniz. Todos os direitos reservados.</p>
+    </footer>
+
+    </body>
+</html>
